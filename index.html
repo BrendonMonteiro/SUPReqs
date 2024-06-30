@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,51 +14,49 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <style>
-      html {
-        height: 100%;
-        background: linear-gradient(90deg, #103812, #2fc136);
-        background-size: 200% 200%;
-        background-attachment: fixed;
-        animation: gradientAnimation 15s ease infinite;
-      }
+html {
+  height: 100%;
+  background: linear-gradient(90deg, #103812, #2fc136);
+  background-size: 200% 200%;
+  background-attachment: fixed;
+  animation: gradientAnimation 15s ease infinite;
+}
 
-      @keyframes gradientAnimation {
-        0% {
-          background-position: 0% 50%;
-        }
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
 
-        50% {
-          background-position: 100% 50%;
-        }
+  50% {
+    background-position: 100% 50%;
+  }
 
-        100% {
-          background-position: 0% 50%;
-        }
-      }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
-      body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        font-family: "Poppins", sans-serif;
-        overflow-y: auto;
-        /* Permitir scroll na tela */
-        background: transparent;
-        /* Tornar o fundo do body transparente para o gradiente do html aparecer */
-      }
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow-y: auto;
+  background: transparent;
+}
 
-      .container {
-        width: 100%;
-        max-width: 800px;
-        text-align: center;
-        position: relative;
-        transition: transform 0.5s ease-in-out;
-      }
+.container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
 
-      .logo {
+.logo {
         width: 100%;
         max-width: 80%;
         height: auto;
@@ -68,303 +66,306 @@
         margin-top: -40px;
       }
 
-      .logo-container {
-        position: relative;
-        display: inline-block;
-      }
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
 
-      .buttons {
-        display: flex;
-        align-items: center;
-        /* Centraliza verticalmente os itens */
-        justify-content: center;
-        position: relative;
-        overflow: hidden;
-        margin-top: -70px;
-        margin-left: -5%;
-        z-index: 1;
-        width: 110%;
-      }
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: -70px;
+  margin-left: -5%;
+  z-index: 1;
+  width: 110%;
+}
 
-      .nav-arrow {
-        font-size: 2rem;
-        color: white;
-        opacity: 0.9;
-        cursor: pointer;
-        z-index: 2;
-        transition: transform 0.3s;
-      }
+.nav-arrow {
+  font-size: 2rem;
+  color: white;
+  opacity: 0.9;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.3s;
+}
 
-      .nav-arrow:hover {
-        opacity: 1;
-        transform: scale(1.2);
-      }
+.nav-arrow:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
 
-      .nav-arrow.left {
-        margin-right: 10px;
-      }
+.nav-arrow.left {
+  margin-right: 10px;
+}
 
-      .nav-arrow.right {
-        margin-left: 10px;
-      }
-
-      .button {
-        flex: 1;
-        margin: 0 5px;
-        padding: 10px 0;
-        background-color: white;
-        color: #103812;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        border-radius: 1.15rem;
-        height: 90px;
-        z-index: 2;
-        position: relative;
-        font-weight: 800;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.1s ease;
-      }
-
-      .button .icon {
-        margin-right: 8px;
-        height: 1.25rem;
-        width: auto;
-      }
-
-      /* .buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -70px;
-    z-index: 1;
-    position: relative;
+.nav-arrow.right {
+  margin-left: 10px;
 }
 
 .button {
-    flex: 1;
-    margin: 0 5px;
-    padding: 10px 0;
-    background-color: white;
-    color: #5D1464;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 1.15rem;
-    height: 90px;
-    z-index: 2;
+  flex: 1;
+  margin: 0 5px; /* Espaçamento entre botões */
+  padding: 10px 0;
+  background-color: white;
+  color: #103812;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 1.15rem;
+  height: 90px;
+  z-index: 2;
+  position: relative;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease;
+}
+
+.button .icon {
+  margin-right: 8px;
+  height: 1.15rem;
+  width: auto;
+}
+
+.button:hover {
+  background-color: #e1f7e2;
+  transform: scale(1.01);
+}
+
+.form-container {
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 2rem;
+  padding: 20px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+}
+
+.form-container.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  height: 62px;
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #282828;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+  border-color: #34d13c;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  color: #282828;
+}
+
+.form-container select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 30px;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+}
+
+.form-container .checkbox {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 14px;
+  color: #545353;
+}
+
+.form-container .checkbox input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.form-container button {
+  height: 68px;
+  background-color: #2eb234;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #103812;
+}
+
+.form-container .row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .row input,
+.form-container .row select,
+.form-container .row textarea {
+  width: calc(50% - 5px);
+}
+
+body.scrollable .container {
+  height: auto;
+  transform: translateY(10vh);
+}
+
+input.invalid,
+select.invalid,
+textarea.invalid {
+  border: 2px solid #d9534f;
+  background-color: #f2dede;
+}
+
+input.invalid:focus,
+select.invalid:focus,
+textarea.invalid:focus {
+  border-color: #a94442;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #103812;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2fc136;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #35c63d;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #2fc136 #103812;
+}
+
+.credits {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 1px solid #2fc136;
+  font-size: 14px;
+  color: #ffffffc8;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.credits p strong {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.credits i {
+  margin-right: 8px;
+}
+
+.credits .line-break {
+  display: block;
+  margin-top: -10px;
+}
+
+.credits.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+  body {
+    margin: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    overflow-y: auto;
+    background: transparent;
+  }
+  
+  .buttons {
+    height: auto;
     position: relative;
-    font-weight: 800;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.button .icon {
-    margin-right: 8px;
-    height: 1.25rem;
+  }
+  
+  .button {
+    width: calc(20% - 5px); /* Ajuste o tamanho dos botões para 90% da largura */
+    font-size: 60%;
+    margin: 2px;
+    padding: 2%;
+    flex: 1 1 15%; /* Altera para ocupar toda a largura em telas menores */
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .icon {
+    margin-right: 10px;
+    height: 1.15rem;
     width: auto;
-} */
-
-      .button:hover {
-        background-color: #e1f7e2;
-        transform: scale(1.01);
-      }
-
-      .form-container {
-        display: none;
-        margin-top: 20px;
-        margin-bottom: 2rem;
-        padding: 20px;
-        background-color: white;
-        border-radius: 1rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        transform: translateY(50px);
-        transition: all 0.5s ease;
-      }
-
-      .form-container.active {
-        display: block;
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .form-container form {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .form-container input,
-      .form-container select,
-      .form-container textarea {
-        height: 62px;
-        background-color: #e7e7e7;
-        border: none;
-        border-radius: 10px;
-        padding: 10px;
-        font-family: "Poppins", sans-serif;
-        font-size: 16px;
-        color: #282828;
-        transition: border-color 0.3s ease;
-      }
-
-      .form-container input:focus,
-      .form-container select:focus,
-      .form-container textarea:focus {
-        border-color: #34d13c;
-      }
-
-      .form-container input::placeholder,
-      .form-container textarea::placeholder {
-        color: #282828;
-      }
-
-      .form-container select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        padding-right: 30px;
-        /* Espaço para a seta */
-        background-image: url('data:image/svg+xml;utf8,<svg fill="%23000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-        background-repeat: no-repeat;
-        background-position: right 10px center;
-        background-size: 16px 16px;
-      }
-
-      .form-container .checkbox {
-        display: flex;
-        align-items: center;
-        text-align: left;
-        font-size: 14px;
-        color: #545353;
-      }
-
-      .form-container .checkbox input {
-        width: auto;
-        margin-right: 10px;
-      }
-
-      .form-container button {
-        height: 68px;
-        background-color: #2eb234;
-        color: white;
-        border: none;
-        border-radius: 15px;
-        cursor: pointer;
-        font-family: "Poppins", sans-serif;
-        font-size: 16px;
-        transition: background-color 0.3s;
-      }
-
-      .form-container button:hover {
-        background-color: #103812;
-      }
-
-      .form-container .row {
-        display: flex;
-        gap: 10px;
-      }
-
-      .form-container .row input,
-      .form-container .row select,
-      .form-container .row textarea {
-        width: calc(50% - 5px);
-        /* Ajustar a largura dos campos divididos */
-      }
-
-      body.scrollable .container {
-        height: auto;
-        /* Garantir que o contêiner ocupe toda a altura necessária quando ativo */
-        transform: translateY(10vh);
-        /* Subir o contêiner apenas até o limite da tela */
-      }
-
-      /* body.scrollable .logo-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-top: 20px;
-} */
-
-      /* Estilização dos campos inválidos */
-      input.invalid,
-      select.invalid,
-      textarea.invalid {
-        border: 2px solid #d9534f;
-        /* Borda vermelha */
-        background-color: #f2dede;
-        /* Fundo vermelho claro */
-      }
-
-      input.invalid:focus,
-      select.invalid:focus,
-      textarea.invalid:focus {
-        border-color: #a94442;
-        /* Borda vermelha mais escura ao focar */
-        outline: none;
-        /* Remover outline padrão */
-      }
-
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 12px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #103812;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #2fc136;
-        border-radius: 10px;
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: #35c63d;
-      }
-
-      /* For Firefox */
-      body {
-        scrollbar-width: thin;
-        scrollbar-color: #2fc136 #103812;
-      }
-
-      .credits {
-        text-align: center;
-        margin-top: 40px;
-        padding: 20px;
-        border-top: 1px solid #2fc136;
-        font-size: 14px;
-        color: #ffffffc8;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 1s ease;
-      }
-
-      .credits p strong {
-        color: rgba(255, 255, 255, 0.95);
-      }
-
-      .credits i {
-        margin-right: 8px;
-      }
-
-      .credits .line-break {
-        display: block;
-        margin-top: -10px;
-      }
-
-      .credits.show {
-        opacity: 1;
-        transform: translateY(0);
-      }
+  }
+  .nav-arrow.right {
+    margin-right: 2.5rem; /* Ajuste o espaço do ícone de navegação à direita */
+    z-index: 3; /* Garantir que o ícone esteja acima dos botões */
+  }
+  
+  .nav-arrow.left {
+    margin-left: 2.5rem; /* Ajuste o espaço do ícone de navegação à esquerda */
+    z-index: 3; /* Garantir que o ícone esteja acima dos botões */
+  }
+  
+  .form-container {
+    margin-left: 0.5rem;
+  }
+}
     </style>
+
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
       type="text/javascript"
@@ -379,49 +380,61 @@
       <div class="buttons">
         <i class="fa fa-chevron-left nav-arrow left" onclick="prevButton()"></i>
         <button class="button" onclick="toggleForm('form1')">
-          <img src="https://i.imgur.com/ZKap2R6.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/lDszu4v.png" alt="Ícone" class="icon" />
           ENTRADA DE MEMBROS
         </button>
         <button class="button" onclick="toggleForm('form2')">
-          <img src="https://i.imgur.com/EnWTW31.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/wUuGzSd.png" alt="Ícone" class="icon" />
           EXPULSÃO
         </button>
         <button class="button" onclick="toggleForm('form3')">
-          <img src="https://i.imgur.com/vUn4p9M.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/7z0S0AN.png" alt="Ícone" class="icon" />
           LICENÇA
         </button>
         <button class="button" onclick="toggleForm('form4')">
-          <img src="https://i.imgur.com/VBG7iMT.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/yteQ6JX.png" alt="Ícone" class="icon" />
           PROMOÇÃO
         </button>
         <button class="button" onclick="toggleForm('form5')">
-          <img src="https://i.imgur.com/IAG6cru.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/TJDDMm3.png" alt="Ícone" class="icon" />
           REBAIXAMENTO
         </button>
         <button class="button" onclick="toggleForm('form6')">
-          <img src="https://i.imgur.com/zKbZh1m.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/rTP6CQK.png" alt="Ícone" class="icon" />
           SAÍDA
         </button>
         <button class="button" onclick="toggleForm('form7')">
-          <img src="https://i.imgur.com/HiCxY5P.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/ffZO6s0.png" alt="Ícone" class="icon" />
           PROLONGAMENTO DE LICENÇA
         </button>
         <button class="button" onclick="toggleForm('form8')">
-          <img src="https://i.imgur.com/0ncjPPy.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/sr9btur.png" alt="Ícone" class="icon" />
           RETORNO DE LICENÇA
         </button>
         <button class="button" onclick="toggleForm('form9')">
-          <img src="https://i.imgur.com/md7A8oZ.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/Z5fxRu2.png" alt="Ícone" class="icon" />
           MIGRAÇÃO DE CORPO
         </button>
         <button class="button" onclick="toggleForm('form10')">
-          <img src="https://i.imgur.com/xi0zMhG.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/tUhaMkI.png" alt="Ícone" class="icon" />
           TRANSFERÊNCIA DE CONTA
         </button>
         <button class="button" onclick="toggleForm('form11')">
-          <img src="https://i.imgur.com/ueZCCxA.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/ENa2MsJ.png" alt="Ícone" class="icon" />
           REINTEGRAÇÃO
         </button>
+        <button class="button" onclick="toggleForm('form13')">
+          <img src="https://i.imgur.com/ek6lNhG.png" alt="Ícone" class="icon" />
+          GRADUAÇÃO
+        </button>
+        <button class="button" onclick="toggleForm('form14')">
+          <img src="https://i.imgur.com/DDp7abH.png" alt="Ícone" class="icon" />
+          ADVERTÊNCIA
+        </button>
+        <button class="button" onclick="toggleForm('form12')">
+            <img src="https://i.imgur.com/428Hx6V.png" alt="Ícone" class="icon" />
+            ATUALIZAÇÃO DA LISTAGEM
+          </button>
         <i
           class="fa fa-chevron-right nav-arrow right"
           onclick="nextButton()"
@@ -430,41 +443,18 @@
 
       <div id="form1" class="form-container">
         <form novalidate>
-          <input type="text" placeholder="Nickname(s)" required />
-          <input type="date" placeholder="Data" required />
+          <input type="text" placeholder="Nickname(s):" required />
+          <input type="date" placeholder="Data:" required />
           <button type="submit">Enviar</button>
         </form>
       </div>
 
       <div id="form2" class="form-container">
         <form novalidate>
-          <div class="row">
+            <input type="text" placeholder="Motivos:" required />
+            <div class="row">
             <select required>
-              <option value="" disabled selected>Motivo</option>
-              <option value="Acúmulo de advertência">
-                Acúmulo de advertência.
-              </option>
-              <option value="Não postagem de retorno de licença">
-                Não postagem de retorno de licença.
-              </option>
-              <option value="Limite de dias offline">
-                Limite de dias offline.
-              </option>
-              <option value="Não cumprimento de duas metas consecutivas">
-                Não cumprimento de duas metas consecutivas.
-              </option>
-              <option value="Pulo de script">Pulo de script.</option>
-              <option value="Não realização da graduação no prazo">
-                Não realização da graduação no prazo.
-              </option>
-              <option value="Falsificação de informações">
-                Falsificação de informações.
-              </option>
-              <option value="Abuso de poder">Abuso de poder.</option>
-              <option value="Nepotismo">Nepotismo.</option>
-            </select>
-            <select required>
-              <option value="" disabled selected>Cargo na companhia</option>
+              <option value="" disabled selected>Cargo:</option>
               <option value="Supervisor">Supervisor</option>
               <option value="Tutor">Tutor</option>
               <option value="Fiscalizador">Fiscalizador</option>
@@ -474,9 +464,8 @@
               <option value="Vice-Líder">Vice-Líder</option>
               <option value="Líder">Líder</option>
             </select>
-          </div>
           <select required>
-            <option value="" disabled selected>Permissão</option>
+            <option value="" disabled selected>Permissão:</option>
             <option value="Liderança">Liderança</option>
             <option value="Ministério da Segurança">Ministério da Segurança</option>
             <option value="Ministério das Finanças">
@@ -484,10 +473,11 @@
             </option>
             <option value="Ministério">Ministério</option>
           </select>
-          <input type="date" placeholder="Data da expulsão" required />
+        </div>
+          <input type="date" placeholder="Data:" required />
           <input
             type="text"
-            placeholder="TAG do Supervisor (Ex: Fulano - 01 Jan 2024)"
+            placeholder="TAG do Supervisor (Ex.: .Brendon - 01 Jan 2024)"
             required
           />
           <button type="submit">Enviar</button>
@@ -495,17 +485,17 @@
       </div>
       <div id="form3" class="form-container">
         <form novalidate>
-          <input type="text" placeholder="Nickname" required />
+          <input type="text" placeholder="Nickname:" required />
           <input
             type="number"
             min="3"
             max="90"
-            placeholder="Quantidade de dias que serão utilizados na licença"
+            placeholder="Quantidade de dias:"
             required
           />
           <input
             type="text"
-            placeholder="Nickname do membro que concedeu a permissão"
+            placeholder="Permissão:"
             required
           />
           <div class="checkbox">
@@ -523,10 +513,10 @@
 
       <div id="form4" class="form-container">
         <form novalidate>
-          <input type="text" placeholder="Nickname do promovido" required />
+          <input type="text" placeholder="Nickname:" required />
           <div class="row">
             <select required>
-              <option value="" disabled selected>Cargo atual</option>
+              <option value="" disabled selected>Cargo atual:</option>
               <option value="Supervisor">Supervisor</option>
               <option value="Tutor">Tutor</option>
               <option value="Fiscalizador">Fiscalizador</option>
@@ -537,7 +527,7 @@
               <option value="Líder">Líder</option>
             </select>
             <select required>
-              <option value="" disabled selected>Cargo a ser promovido</option>
+              <option value="" disabled selected>Cargo a ser promovido:</option>
               <option value="Supervisor">Supervisor</option>
               <option value="Tutor">Tutor</option>
               <option value="Fiscalizador">Fiscalizador</option>
@@ -548,17 +538,17 @@
               <option value="Líder">Líder</option>
             </select>
           </div>
-          <input type="text" placeholder="Data de promoção" required />
-          <input type="text" placeholder="Motivo" required />
+          <input type="text" placeholder="Data:" required />
+          <input type="text" placeholder="Motivo:" required />
           <button type="submit">Enviar</button>
         </form>
       </div>
       <div id="form5" class="form-container">
         <form novalidate>
-          <input type="text" placeholder="Nickname do rebaixado" required />
+          <input type="text" placeholder="Nickname:" required />
           <div class="row">
             <select required>
-              <option value="" disabled selected>Cargo atual</option>
+              <option value="" disabled selected>Cargo atual:</option>
               <option value="Supervisor">Supervisor</option>
               <option value="Tutor">Tutor</option>
               <option value="Fiscalizador">Fiscalizador</option>
@@ -569,7 +559,7 @@
               <option value="Líder">Líder</option>
             </select>
             <select required>
-              <option value="" disabled selected>Cargo a ser rebaixado</option>
+              <option value="" disabled selected>Cargo a ser rebaixado:</option>
               <option value="Supervisor">Supervisor</option>
               <option value="Tutor">Tutor</option>
               <option value="Fiscalizador">Fiscalizador</option>
@@ -579,33 +569,33 @@
               <option value="Vice-Líder">Vice-Líder</option>
             </select>
           </div>
-          <input type="date" placeholder="Data" required />
-          <input type="text" placeholder="Motivo" required />
+          <input type="date" placeholder="Data:" required />
+          <input type="text" placeholder="Motivo:" required />
           <button type="submit">Enviar</button>
         </form>
       </div>
       <div id="form6" class="form-container">
         <form novalidate>
-          <input type="text" placeholder="Nickname" required />
+          <input type="text" placeholder="Nickname:" required />
           <select required>
-            <option value="" disabled selected>Cargo na companhia</option>
+            <option value="" disabled selected>Cargo:</option>
             <option value="Supervisor">Supervisor</option>
-            <option value="Tutor">Tutor</option>
-            <option value="Fiscalizador">Fiscalizador</option>
-            <option value="Graduador">Graduador</option>
-            <option value="Estagiário">Estagiário</option>
-            <option value="Ministro">Ministro</option>
-            <option value="Vice-Líder">Vice-Líder</option>
-            <option value="Líder">Líder</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
+              <option value="Graduador">Graduador</option>
+              <option value="Estagiário">Estagiário</option>
+              <option value="Ministro">Ministro</option>
+              <option value="Vice-Líder">Vice-Líder</option>
+              <option value="Líder">Líder</option>
           </select>
-          <input type="date" placeholder="Data de saída" required />
-          <input type="text" placeholder="Permissão" required />
-          <input type="text" placeholder="Insira o motivo da saída" required />
+          <input type="date" placeholder="Data:" required />
+          <input type="text" placeholder="Permissão:" required />
+          <input type="text" placeholder="Motivo:" required />
           <div class="checkbox">
             <input type="checkbox" id="termos" required />
             <label for="termos"
               >Li e concordo com as normas de saída, sendo que caso o meu tempo
-              na companhia seja inferior a 30 dias e superior a 7 dias,
+              na companhia seja inferior a 30 dias e superior a 14 dias,
               receberei 50 medalhas efetivas negativas por saída precoce.</label
             >
           </div>
@@ -614,17 +604,17 @@
       </div>
       <div id="form7" class="form-container">
         <form novalidate>
-          <input type="text" placeholder="Nickname" required />
+          <input type="text" placeholder="Nickname:" required />
           <input
             type="number"
             min="3"
             max="90"
-            placeholder="Quantidade de dias que serão utilizados na licença"
+            placeholder="Quantidade de dias:"
             required
           />
           <input
             type="text"
-            placeholder="Nickname do membro que concedeu a permissão"
+            placeholder="Permissão:"
             required
           />
           <div class="checkbox">
@@ -641,66 +631,88 @@
       </div>
       <div id="form8" class="form-container">
         <form novalidate>
-          <input type="text" placeholder="Seu nick" required />
+          <input type="text" placeholder="Nickname:" required />
           <button type="submit">Enviar</button>
         </form>
       </div>
       <div id="form9" class="form-container">
         <form novalidate>
-          <input type="text" placeholder="Nickname" required />
+          <input type="text" placeholder="Nickname:" required />
           <select required>
-            <option value="" disabled selected>Corpo ao qual irá migrar</option>
+            <option value="" disabled selected>Corpo ao qual irá migrar:</option>
             <option value="Corpo Militar">Corpo Militar</option>
             <option value="Corpo Executivo">Corpo Executivo</option>
           </select>
-          <input
-            type="text"
-            placeholder="Insira o nickname do concessor da permissão"
-            required
-          />
           <button type="submit">Enviar</button>
         </form>
       </div>
       <div id="form10" class="form-container">
         <form novalidate>
           <select required>
-            <option value="" disabled selected>Cargo na companhia</option>
+            <option value="" disabled selected>Cargo:</option>
             <option value="Supervisor">Supervisor</option>
-            <option value="Tutor">Tutor</option>
-            <option value="Fiscalizador">Fiscalizador</option>
-            <option value="Graduador">Graduador</option>
-            <option value="Estagiário">Estagiário</option>
-            <option value="Ministro">Ministro</option>
-            <option value="Vice-Líder">Vice-Líder</option>
-            <option value="Líder">Líder</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
+              <option value="Graduador">Graduador</option>
+              <option value="Estagiário">Estagiário</option>
+              <option value="Ministro">Ministro</option>
+              <option value="Vice-Líder">Vice-Líder</option>
+              <option value="Líder">Líder</option>
           </select>
-          <input type="text" placeholder="Nickname antigo" required />
-          <input type="text" placeholder="Nickname novo" required />
+          <input type="text" placeholder="Nickname antigo:" required />
+          <input type="text" placeholder="Nickname novo:" required />
           <button type="submit">Enviar</button>
         </form>
       </div>
       <div id="form11" class="form-container">
         <form novalidate>
-          <input type="text" placeholder="Nickname" required />
-          <input type="date" placeholder="Data de entrada" required />
+          <input type="text" placeholder="Nickname:" required />
+          <input type="date" placeholder="Data:" required />
           <input
             type="text"
-            placeholder="Insira o nickname do concessor da permissão"
+            placeholder="Permissão:"
             required
           />
           <button type="submit">Enviar</button>
         </form>
       </div>
+      <div id="form13" class="form-container">
+        <form novalidate>
+          <input type="text" placeholder="Nickname:" required />
+          <select required>
+            <option value="" disabled selected>Curso:</option>
+            <option value="Graduação Básica">Graduação Básica</option>
+            <option value="Graduação Intermediária">Graduação Intermediária</option>
+            <option value="Graduação Avançada">Graduação Avançada</option>
+          </select>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div id="form14" class="form-container">
+        <form novalidate>
+          <input type="text" placeholder="Nick do(a) responsável:" required />
+          <input type="text" placeholder="Nick do(a) advertido(a):" required />
+          <input type="text" placeholder="Motivo:" required />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div id="form12" class="form-container">
+        <form id="attlist_postagem">
+            <input id="attlist_tag" name="attlist_tag" type="text" placeholder="TAG do(a) responsável. (Ex.: BnD)" required>
+            <input id="fa-generated-message" name="fa-generated-message" type="hidden">
+            <button id="enviar_attlist" type="submit">Enviar</button>
+        </form>
+    </div>
 
       <div class="credits">
         <p>
           <i class="fas fa-code"></i> Desenvolvimento:
-          <strong>mitojmcam e .Brendon</strong> | <i class="fas fa-palette"></i> Design:
+          <strong>mitojmcam, .Brendon</strong> e <strong>Qox</strong> | <i class="fas fa-palette"></i> Design:
           <strong>.Brendon</strong>
         </p>
         <p class="line-break">
           <i class="far fa-registered"></i> Todos os direitos reservados à
-          <strong>Companhia dos Supervisores</strong>
+          <strong>Companhia dos Supervisores.</strong>
         </p>
       </div>
     </div>
@@ -727,6 +739,8 @@
         form9: "MIGRAÇÃO DE CORPO",
         form10: "TRANSFERÊNCIA DE CONTA",
         form11: "REINTEGRAÇÃO",
+        form13: "GRADUAÇÃO",
+        form14: "ADVERTÊNCIA"
       };
 
       function updateButtons() {
@@ -788,8 +802,17 @@
         if (!activeForm) return "";
 
         const formId = activeForm.id;
-        const title = formTitles[formId] || "Formulário";
-        let formData = `[font=Poppins][center][table style="border-color: black; border-radius: 10px; overflow: hidden; width: auto;" bgcolor="#30a737"][tr][td][size=16][center][color=#ffffff][b]${title}[/b][/color][/center][/size][/td][/tr][/table][/center]\n[size=13][left]`;
+        console.log (formId)
+        let formData = "";
+        const title = formTitles[formId];
+        if (formId == "form12") {
+
+        
+            formData = ""
+        }else {
+             formData += `[font=Poppins][center][table style="border-color: black; border-radius: 10px; overflow: hidden; width: auto;" bgcolor="#30a737"][tr][td][size=16][center][color=#ffffff][b]${title}[/b][/color][/center][/size][/td][/tr][/table][/center]\n[size=13][left]`; 
+        }
+        
 
         const inputs = activeForm.querySelectorAll("input, select, textarea");
         inputs.forEach((input) => {
@@ -810,7 +833,12 @@
                 placeholder = `${input.options[0].innerText}`;
                 formattedValue = input.options[input.selectedIndex].innerText;
               }
-              formData += `[color=#3b833f][b]${placeholder}:[/b][/color] ${formattedValue}\n`;
+          
+           const dtt = retorna_horario();
+       
+            formData += `[color=#3b833f][b]${placeholder}[/b][/color] ${formattedValue}\n`;
+        
+              
             }
           }
         });
@@ -821,12 +849,23 @@
         checkboxes.forEach((checkbox) => {
           if (checkbox.checked) {
             const label = checkbox.nextElementSibling.innerText.trim();
-            formData += `[color=#3b833f][b]☒[/b][/color] ${label}\n`;
+            if (formId == "" ||formId== undefined){
+             formData = ""
+        }else {
+            formData += `[color=#3b833f][b]✔[/b][/color] ${label}\n`;
+        }
+        
           }
         });
-
-        return (formData += `[/size][/font][/left]`);
+        if (formId == "form12" ||formId== undefined){
+            
+            return (formData);
+        }else {
+            return (formData += `[/size][/font][/left]`);
+        }
+      
       }
+
 
       //   document.querySelectorAll("form").forEach((form) => {
       //     form.addEventListener("submit", (event) => {
@@ -940,5 +979,42 @@
         });
       })(jQuery);
     </script>
+
+<script>
+ $(document).ready(function() {
+    $("#attlist_postagem").submit(function(e) {
+        e.preventDefault(); // Evita o envio padrão do formulário
+
+        // Verifica se o campo está preenchido
+        var attlist_tag_value = $('#attlist_tag').val().trim();
+
+        if (attlist_tag_value === "") {
+            alert('Preencha todos os campos!');
+            return;
+        }
+
+        // Gerar o texto da atualização
+        var texto = '[table class="rank suptable" style="border: none!important; margin: 1em; padding: 1.4em; line-height: 1.4em;"]' +
+            '[tr style="border: none;"]' +
+            '[td style="border: none!important;"]' +
+            '[img]https://i.imgur.com/pOCVdub.png[/img]\n' +
+            '[font=Poppins][color=white][size=15][b][SUP] Atualização realizada! [' + attlist_tag_value + '][/b][/size]\n' +
+            '[b]Foi realizada uma atualização neste horário, em caso de erros, consulte um membro do Ministério/Liderança.[/b][/color][/font][/td][/tr][/table]';
+
+        // Exibir o texto gerado (opcional)
+        console.log('Texto gerado:', texto);
+
+        // Limpar ou fazer o que for necessário com o texto gerado
+        $('#fa-generated-message').val(texto);
+
+        // Limpar o campo do formulário
+        $('#attlist_tag').val('');
+    });
+});
+
+    </script>
+
+
+
   </body>
 </html>
