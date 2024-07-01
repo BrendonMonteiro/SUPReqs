@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[PROF] Requerimentos</title>
+    <title>[SUP] Requerimentos</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="https://i.imgur.com/WEaVrCr.gif" />
+    <link rel="icon" href="https://i.imgur.com/36uawCo.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -44,7 +44,7 @@
     <style>
 html {
   height: 100%;
-  background: linear-gradient(90deg, #380c3c, #bf74c7);
+  background: linear-gradient(90deg, #103812, #2fc136);
   background-size: 200% 200%;
   background-attachment: fixed;
   animation: gradientAnimation 15s ease infinite;
@@ -84,11 +84,16 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
+::selection {
+    background-color: #0d2b0f;
+    color: #34d13c;
+}
+
 .logo {
   width: 100%;
-  max-width: 360px;
+  max-width: 80%;
   height: auto;
-  margin: 0 auto;
+  margin: 3em;
   position: relative;
   z-index: 0;
   margin-top: -40px;
@@ -105,6 +110,7 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  font-size: 15px;
   margin-top: -70px;
   margin-left: -5%;
   z-index: 1;
@@ -133,23 +139,17 @@ body {
   margin-left: 10px;
 }
 
-::selection {
-    background-color: #432546;
-    color: #f26dff;
-}
-
 .button {
   flex: 1;
   margin: 0 5px; /* Espaçamento entre botões */
   padding: 10px 0;
   background-color: white;
-  color: #84468b;
+  color: #103812;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s;
   border-radius: 1.15rem;
   height: 90px;
-  font-size: 14px;
-  text-align: center;
   z-index: 2;
   position: relative;
   font-weight: 800;
@@ -169,7 +169,7 @@ body {
 }
 
 .button:hover {
-  background-color: #f5dff8;
+  background-color: #e1f7e2;
   transform: scale(1.01);
   filter: grayscale(0%); /* Remove a escala de cinza */
 }
@@ -223,7 +223,7 @@ body {
 .form-container input:focus,
 .form-container select:focus,
 .form-container textarea:focus {
-  border-color: #f26dff;
+  border-color: #34d13c;
 }
 
 .form-container input::placeholder,
@@ -257,7 +257,7 @@ body {
 
 .form-container button {
   height: 68px;
-  background-color: #bf74c7;
+  background-color: #2eb234;
   color: white;
   border: none;
   border-radius: 15px;
@@ -268,7 +268,7 @@ body {
 }
 
 .form-container button:hover {
-  background-color: #84468b;
+  background-color: #103812;
 }
 
 .form-container .row {
@@ -306,31 +306,30 @@ textarea.invalid:focus {
 }
 
 ::-webkit-scrollbar-track {
-  background: #33033e;
+  background: #103812;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ad66b4;
+  background: #2fc136;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ad66b4;
+  background: #35c63d;
 }
 
 body {
   scrollbar-width: thin;
-  scrollbar-color: #bf74c7 #36083a;
+  scrollbar-color: #2fc136 #103812;
 }
 
 .credits {
   text-align: center;
   margin-top: 40px;
   padding: 20px;
-  border-top: 1px solid #bf74c7;
+  border-top: 1px solid #2fc136;
   font-size: 14px;
   color: #ffffffc8;
-
   opacity: 0;
   transform: translateY(20px);
   transition: all 1s ease;
@@ -408,11 +407,6 @@ body {
   .form-container {
     margin-left: 0.5rem;
   }
-
-  .sem-sublinhado {
-    text-decoration: none; /* Remove o sublinhado */
-}
-
 }
     </style>
 
@@ -425,53 +419,61 @@ body {
   <body>
     <div class="container">
       <div class="logo-container">
-        <img src="https://i.imgur.com/deilD3w.png" alt="Logo" class="logo" />
+        <img src="https://i.imgur.com/iyar1E1.png" alt="Logo" class="logo" />
       </div>
       <div class="buttons">
         <i class="fa fa-chevron-left nav-arrow left" onclick="prevButton()"></i>
         <button class="button" onclick="toggleForm('form1')">
-          <img src="https://i.imgur.com/lDszu4v.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/ZKap2R6.png" alt="Ícone" class="icon" />
           ENTRADA DE MEMBROS
         </button>
         <button class="button" onclick="toggleForm('form2')">
-          <img src="https://i.imgur.com/wUuGzSd.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/EnWTW31.png" alt="Ícone" class="icon" />
           EXPULSÃO
         </button>
         <button class="button" onclick="toggleForm('form3')">
-          <img src="https://i.imgur.com/7z0S0AN.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/vUn4p9M.png" alt="Ícone" class="icon" />
           LICENÇA
         </button>
         <button class="button" onclick="toggleForm('form4')">
-          <img src="https://i.imgur.com/yteQ6JX.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/VBG7iMT.png" alt="Ícone" class="icon" />
           PROMOÇÃO
         </button>
         <button class="button" onclick="toggleForm('form5')">
-          <img src="https://i.imgur.com/TJDDMm3.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/IAG6cru.png" alt="Ícone" class="icon" />
           REBAIXAMENTO
         </button>
         <button class="button" onclick="toggleForm('form6')">
-          <img src="https://i.imgur.com/rTP6CQK.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/zKbZh1m.png" alt="Ícone" class="icon" />
           SAÍDA
         </button>
         <button class="button" onclick="toggleForm('form7')">
-          <img src="https://i.imgur.com/ffZO6s0.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/HiCxY5P.png" alt="Ícone" class="icon" />
           PROLONGAMENTO DE LICENÇA
         </button>
         <button class="button" onclick="toggleForm('form8')">
-          <img src="https://i.imgur.com/sr9btur.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/0ncjPPy.png" alt="Ícone" class="icon" />
           RETORNO DE LICENÇA
         </button>
         <button class="button" onclick="toggleForm('form9')">
-          <img src="https://i.imgur.com/Z5fxRu2.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/md7A8oZ.png" alt="Ícone" class="icon" />
           MIGRAÇÃO DE CORPO
         </button>
         <button class="button" onclick="toggleForm('form10')">
-          <img src="https://i.imgur.com/tUhaMkI.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/xi0zMhG.png" alt="Ícone" class="icon" />
           TRANSFERÊNCIA DE CONTA
         </button>
         <button class="button" onclick="toggleForm('form11')">
-          <img src="https://i.imgur.com/ENa2MsJ.png" alt="Ícone" class="icon" />
+          <img src="https://i.imgur.com/ueZCCxA.png" alt="Ícone" class="icon" />
           REINTEGRAÇÃO
+        </button>
+        <button class="button" onclick="toggleForm('form13')">
+          <img src="https://i.imgur.com/ek6lNhG.png" alt="Ícone" class="icon" />
+          GRADUAÇÃO
+        </button>
+        <button class="button" onclick="toggleForm('form14')">
+          <img src="https://i.imgur.com/DDp7abH.png" alt="Ícone" class="icon" />
+          ADVERTÊNCIA
         </button>
         <button class="button" onclick="toggleForm('form12')">
             <img src="https://i.imgur.com/428Hx6V.png" alt="Ícone" class="icon" />
@@ -493,51 +495,29 @@ body {
 
       <div id="form2" class="form-container">
         <form novalidate>
-          <div class="row">
-            <select required>
-              <option value="" disabled selected>Motivo:</option>
-              <option value="Acúmulo de advertência">
-                Acúmulo de advertência
-              </option>
-              <option value="Não postagem de retorno de licença">
-                Não postagem de retorno de licença
-              </option>
-              <option value="Limite de dias offline">
-                Limite de dias offline
-              </option>
-              <option value="Não cumprimento de duas metas consecutivas">
-                Não cumprimento de duas metas consecutivas
-              </option>
-              <option value="Pulo de script">Pulo de script</option>
-              <option value="Não realização da graduação no prazo">
-                Não realização da graduação no prazo
-              </option>
-              <option value="Falsificação de informações">
-                Falsificação de informações
-              </option>
-              <option value="Abuso de poder">Abuso de poder</option>
-              <option value="Nepotismo">Nepotismo</option>
-            </select>
+            <input type="text" placeholder="Motivos:" required />
+            <div class="row">
             <select required>
               <option value="" disabled selected>Cargo:</option>
-              <option value="Professor">Professor</option>
-              <option value="Coordenador">Coordenador</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
               <option value="Graduador">Graduador</option>
               <option value="Estagiário">Estagiário</option>
-              <option value="Conselheiro">Conselheiro</option>
+              <option value="Ministro">Ministro</option>
               <option value="Vice-Líder">Vice-Líder</option>
               <option value="Líder">Líder</option>
             </select>
-          </div>
           <select required>
             <option value="" disabled selected>Permissão:</option>
             <option value="Liderança">Liderança</option>
-            <option value="Conselho da Segurança">Conselho da Segurança</option>
-            <option value="Conselho de Contabilidade">
-              Conselho de Contabilidade
+            <option value="Ministério da Segurança">Ministério da Segurança</option>
+            <option value="Ministério das Finanças">
+              Ministério das Finanças
             </option>
-            <option value="Conselho">Conselho</option>
+            <option value="Ministério">Ministério</option>
           </select>
+        </div>
           <input type="date" placeholder="Data:" required />
           <input
             type="text"
@@ -567,7 +547,7 @@ body {
             <label for="lic_terms"
               >Estou ciente que tenho até 24 horas do término de minha licença
               para postar o meu retorno, caso contrário, serei expulso da
-              companhia dos Professores e receberei 100 medalhas efetivas
+              companhia dos Supervisores e receberei 100 medalhas efetivas
               negativas.</label
             >
           </div>
@@ -581,21 +561,23 @@ body {
           <div class="row">
             <select required>
               <option value="" disabled selected>Cargo atual:</option>
-              <option value="Professor">Professor</option>
-              <option value="Coordenador">Coordenador</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
               <option value="Graduador">Graduador</option>
               <option value="Estagiário">Estagiário</option>
-              <option value="Conselheiro">Conselheiro</option>
+              <option value="Ministro">Ministro</option>
               <option value="Vice-Líder">Vice-Líder</option>
               <option value="Líder">Líder</option>
             </select>
             <select required>
               <option value="" disabled selected>Cargo a ser promovido:</option>
-              <option value="Professor">Professor</option>
-              <option value="Coordenador">Coordenador</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
               <option value="Graduador">Graduador</option>
               <option value="Estagiário">Estagiário</option>
-              <option value="Conselheiro">Conselheiro</option>
+              <option value="Ministro">Ministro</option>
               <option value="Vice-Líder">Vice-Líder</option>
               <option value="Líder">Líder</option>
             </select>
@@ -611,21 +593,23 @@ body {
           <div class="row">
             <select required>
               <option value="" disabled selected>Cargo atual:</option>
-              <option value="Professor">Professor</option>
-              <option value="Coordenador">Coordenador</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
               <option value="Graduador">Graduador</option>
               <option value="Estagiário">Estagiário</option>
-              <option value="Conselheiro">Conselheiro</option>
+              <option value="Ministro">Ministro</option>
               <option value="Vice-Líder">Vice-Líder</option>
               <option value="Líder">Líder</option>
             </select>
             <select required>
               <option value="" disabled selected>Cargo a ser rebaixado:</option>
-              <option value="Professor">Professor</option>
-              <option value="Coordenador">Coordenador</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
               <option value="Graduador">Graduador</option>
               <option value="Estagiário">Estagiário</option>
-              <option value="Conselheiro">Conselheiro</option>
+              <option value="Ministro">Ministro</option>
               <option value="Vice-Líder">Vice-Líder</option>
             </select>
           </div>
@@ -639,13 +623,14 @@ body {
           <input type="text" placeholder="Nickname:" required />
           <select required>
             <option value="" disabled selected>Cargo:</option>
-            <option value="Professor">Professor</option>
-            <option value="Coordenador">Coordenador</option>
-            <option value="Graduador">Graduador</option>
-            <option value="Estagiário">Estagiário</option>
-            <option value="Conselheiro">Conselheiro</option>
-            <option value="Vice-Líder">Vice-Líder</option>
-            <option value="Líder">Líder</option>
+            <option value="Supervisor">Supervisor</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
+              <option value="Graduador">Graduador</option>
+              <option value="Estagiário">Estagiário</option>
+              <option value="Ministro">Ministro</option>
+              <option value="Vice-Líder">Vice-Líder</option>
+              <option value="Líder">Líder</option>
           </select>
           <input type="date" placeholder="Data:" required />
           <input type="text" placeholder="Permissão:" required />
@@ -681,7 +666,7 @@ body {
             <label for="licpro_terms"
               >Estou ciente que tenho até 24 horas do término de minha licença
               para postar o meu retorno, caso contrário, serei expulso da
-              companhia dos Professores e receberei 100 medalhas efetivas
+              companhia dos Supervisores e receberei 100 medalhas efetivas
               negativas.</label
             >
           </div>
@@ -702,11 +687,6 @@ body {
             <option value="Corpo Militar">Corpo Militar</option>
             <option value="Corpo Executivo">Corpo Executivo</option>
           </select>
-          <input
-            type="text"
-            placeholder="Permissão:"
-            required
-          />
           <button type="submit">Enviar</button>
         </form>
       </div>
@@ -714,13 +694,14 @@ body {
         <form novalidate>
           <select required>
             <option value="" disabled selected>Cargo:</option>
-            <option value="Professor">Professor</option>
-            <option value="Coordenador">Coordenador</option>
-            <option value="Graduador">Graduador</option>
-            <option value="Estagiário">Estagiário</option>
-            <option value="Conselheiro">Conselheiro</option>
-            <option value="Vice-Líder">Vice-Líder</option>
-            <option value="Líder">Líder</option>
+            <option value="Supervisor">Supervisor</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
+              <option value="Graduador">Graduador</option>
+              <option value="Estagiário">Estagiário</option>
+              <option value="Ministro">Ministro</option>
+              <option value="Vice-Líder">Vice-Líder</option>
+              <option value="Líder">Líder</option>
           </select>
           <input type="text" placeholder="Nickname antigo:" required />
           <input type="text" placeholder="Nickname novo:" required />
@@ -739,7 +720,26 @@ body {
           <button type="submit">Enviar</button>
         </form>
       </div>
-
+      <div id="form13" class="form-container">
+        <form novalidate>
+          <input type="text" placeholder="Nickname:" required />
+          <select required>
+            <option value="" disabled selected>Curso:</option>
+            <option value="Graduação Básica">Graduação Básica</option>
+            <option value="Graduação Intermediária">Graduação Intermediária</option>
+            <option value="Graduação Avançada">Graduação Avançada</option>
+          </select>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div id="form14" class="form-container">
+        <form novalidate>
+          <input type="text" placeholder="Nick do(a) responsável:" required />
+          <input type="text" placeholder="Nick do(a) advertido(a):" required />
+          <input type="text" placeholder="Motivo:" required />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
       <div id="form12" class="form-container">
         <form id="attlist_postagem">
             <input id="attlist_tag" name="attlist_tag" type="text" placeholder="TAG do(a) responsável. (Ex.: BnD)" required>
@@ -751,11 +751,12 @@ body {
       <div class="credits">
         <p>
           <i class="fas fa-code"></i> Desenvolvimento:
-          <strong>mitojmcam</strong> e <strong>.Brendon</strong> |  <i class="fas fa-palette"></i>Design: <strong>.Brendon</strong>
+          <strong>mitojmcam, .Brendon</strong> e <strong>Qox</strong> | <i class="fas fa-palette"></i> Design:
+          <strong>.Brendon</strong>
         </p>
         <p class="line-break">
           <i class="far fa-registered"></i> Todos os direitos reservados à
-          <strong>Companhia dos Professores</strong>
+          <strong>Companhia dos Supervisores.</strong>
         </p>
       </div>
     </div>
@@ -781,7 +782,9 @@ body {
         form8: "RETORNO DE LICENÇA",
         form9: "MIGRAÇÃO DE CORPO",
         form10: "TRANSFERÊNCIA DE CONTA",
-        form11: "REINTEGRAÇÃO"
+        form11: "REINTEGRAÇÃO",
+        form13: "GRADUAÇÃO",
+        form14: "ADVERTÊNCIA"
       };
 
       function updateButtons() {
@@ -851,7 +854,7 @@ body {
         
             formData = ""
         }else {
-             formData += `[font=Poppins][center][table style="border-color: black; border-radius: 10px; overflow: hidden; width: auto;" bgcolor="#560c7e"][tr][td][size=16][center][color=#ffffff][b]${title}[/b][/color][/center][/size][/td][/tr][/table][/center]\n[size=13][left]`; 
+             formData += `[font=Poppins][center][table style="border-color: black; border-radius: 10px; overflow: hidden; width: auto;" bgcolor="#30a737"][tr][td][size=16][center][color=#ffffff][b]${title}[/b][/color][/center][/size][/td][/tr][/table][/center]\n[size=13][left]`; 
         }
         
 
@@ -877,7 +880,7 @@ body {
           
            const dtt = retorna_horario();
        
-            formData += `[color=#560c7e][b]${placeholder}[/b][/color] ${formattedValue}\n`;
+            formData += `[color=#3b833f][b]${placeholder}[/b][/color] ${formattedValue}\n`;
         
               
             }
@@ -893,7 +896,7 @@ body {
             if (formId == "" ||formId== undefined){
              formData = ""
         }else {
-            formData += `[color=#560c7e][b]&#9745;&#65039;[/b][/color] ${label}\n`;
+            formData += `[color=#3b833f][b]&#9989;[/b][/color] ${label}\n`;
         }
         
           }
@@ -903,7 +906,7 @@ body {
             return (formData);
         }else {
             return (formData += `[/size][/font][/left]`);
-        } 
+        }
       
       }
 
@@ -997,7 +1000,7 @@ body {
             if (bbcodeMessage) {
               setTimeout(function () {
                 $.post("/post", {
-                  t: 32243,
+                  t: 34790,
                   message: bbcodeMessage,
                   mode: "reply",
                   post: 1,
@@ -1007,7 +1010,7 @@ body {
                       "Postado com sucesso. Você será redirecionado para o tópico..."
                     );
                     location.href =
-                      "http://" + location.host + "/t32243-?view=newest";
+                      "http://" + location.host + "/t34790-?view=newest";
                   })
                   .fail(function () {
                     alert("Houve um erro! Tente novamente!");
@@ -1035,14 +1038,12 @@ body {
         }
 
         // Gerar o texto da atualização
-        var texto = '[table class="rank attprof" style="border: none!important; margin: 1em; line-height: 1.4em;"]' +
+        var texto = '[table class="rank suptable" style="border: none!important; margin: 1em; padding: 1.4em; line-height: 1.4em;"]' +
             '[tr style="border: none;"]' +
             '[td style="border: none!important;"]' +
-            '[img]https://i.imgur.com/1nRwKhI.gif[/img]\n' +
-            '[font=Poppins][size=15][color=white][b][PROF] ATUALIZADO [' + attlist_tag_value + '][/b][/color][/size][color=white]\n' +
-            'Em virtude do Conselho da Documentação, foi realizada uma atualização neste horário. \n' +
-            'Em caso de erros consulte um conselheiro+ da companhia dos Professores.\n\n' +
-            '[b]#SoberaniaROXA[/b][/color][/font][/td][/tr][/table]';
+            '[img]https://i.imgur.com/pOCVdub.png[/img]\n' +
+            '[font=Poppins][color=white][size=15][b][SUP] Atualização realizada! [' + attlist_tag_value + '][/b][/size]\n' +
+            '[b]Foi realizada uma atualização neste horário, em caso de erros, consulte um membro do Ministério/Liderança.[/b][/color][/font][/td][/tr][/table]';
 
         // Exibir o texto gerado (opcional)
         console.log('Texto gerado:', texto);
@@ -1054,6 +1055,7 @@ body {
         $('#attlist_tag').val('');
     });
 });
+
     </script>
   </body>
 </html>
