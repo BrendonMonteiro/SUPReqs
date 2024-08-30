@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[PROF] Requerimentos</title>
+    <title>[SUP] Requerimentos</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900;1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="https://i.imgur.com/WEaVrCr.gif" />
+    <link rel="icon" href="https://i.imgur.com/36uawCo.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -77,7 +78,7 @@
     <style>
       html {
         height: 100%;
-        background: linear-gradient(90deg, #380c3c, #bf74c7);
+        background: linear-gradient(90deg, #103812, #2fc136);
         background-size: 200% 200%;
         background-attachment: fixed;
         animation: gradientAnimation 15s ease infinite;
@@ -118,19 +119,19 @@
       }
 
       .logo {
-        width: 100%;
-        max-width: 360px;
-        height: auto;
-        margin: 0 auto;
-        position: relative;
-        z-index: 0;
-        margin-top: -60px;
-      }
+  width: 100%;
+  max-width: 80%;
+  height: auto;
+  margin: 1%;
+  position: relative;
+  z-index: 0;
+  margin-top: -10px;
+}
 
-      .logo-container {
-        position: relative;
-        display: inline-block;
-      }
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
 
       .buttons {
         display: flex;
@@ -167,8 +168,8 @@
       }
 
       ::selection {
-        background-color: #432546;
-        color: #f26dff;
+        background-color: #1b6d1f;
+        color: #2fc136;
       }
 
       .button {
@@ -176,7 +177,7 @@
         margin: 0 5px; /* Espaçamento entre botões */
         padding: 10px 0;
         background-color: white;
-        color: #84468b;
+        color: #1b6d1f;
         border: none;
         cursor: pointer;
         border-radius: 1.15rem;
@@ -257,7 +258,7 @@
       .form-container input:focus,
       .form-container select:focus,
       .form-container textarea:focus {
-        border-color: #f26dff;
+        border-color: #2b832f;
       }
 
       .form-container input::placeholder,
@@ -291,7 +292,7 @@
 
       .form-container button {
         height: 68px;
-        background-color: #bf74c7;
+        background-color: #2b832f;
         color: white;
         border: none;
         border-radius: 15px;
@@ -302,7 +303,7 @@
       }
 
       .form-container button:hover {
-        background-color: #84468b;
+        background-color: #155718;
       }
 
       .form-container .row {
@@ -340,28 +341,28 @@
       }
 
       ::-webkit-scrollbar-track {
-        background: #29002c;
+        background: #0b240c;
       }
 
       ::-webkit-scrollbar-thumb {
-        background: #ad66b4;
+        background: #237927;
         border-radius: 10px;
       }
 
       ::-webkit-scrollbar-thumb:hover {
-        background: #ad66b4;
+        background: #237927;
       }
 
       body {
         scrollbar-width: thin;
-        scrollbar-color: #bf74c7 #36083a;
+        scrollbar-color: #2b832f #104212;
       }
 
       .credits {
         text-align: center;
         margin-top: 40px;
         padding: 20px;
-        border-top: 1px solid #bf74c7;
+        border-top: 1px solid #2b832f;
         font-size: 14px;
         color: #ffffffc8;
 
@@ -399,7 +400,7 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
         padding: 16px 20px;
-        color: #84468b;
+        color: #206d23;
         letter-spacing: 1.2px;
         text-transform: uppercase;
         position: relative;
@@ -471,7 +472,7 @@
         filter: grayscale(0%); /* Remove a escala de cinza */
       }
       .btn .dropdown li.active {
-        color: #7a319c !important;
+        color: #247727 !important;
         filter: grayscale(0%); /* Remove a escala de cinza */
       }
       .btn .dropdown li:first-child {
@@ -550,7 +551,7 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
         padding: 16px 20px;
-        color: #84468b;
+        color: #206d23;
         letter-spacing: 1.2px;
         text-transform: uppercase;
         position: relative;
@@ -622,7 +623,7 @@
         filter: grayscale(0%); /* Remove a escala de cinza */
       }
       .btn .dropdown li.active {
-        color: #7a319c !important;
+        color: #1c5e1e !important;
         filter: grayscale(0%); /* Remove a escala de cinza */
       }
       .btn .dropdown li:first-child {
@@ -654,7 +655,7 @@
   <body>
     <div class="container">
       <div class="logo-container">
-        <img src="https://i.imgur.com/cSDkEWg.png" alt="Logo" class="logo" />
+        <img src="https://i.imgur.com/iyar1E1.png" alt="Logo" class="logo" />
       </div>
       <button class="btn">
         <div id="selectedImage" style="display: none;">
@@ -665,37 +666,137 @@
         <ul class="dropdown">
             <li onclick="toggleForm('form1')" id="item1">
               <div style="display: flex; gap: 1rem; align-items: center">
-                <img src="https://i.imgur.com/lDszu4v.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <img src="https://i.imgur.com/ZKap2R6.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
                 <a href="#">ENTRADA DE MEMBROS</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form13')" id="item13">
+              <div style="display: flex; gap: 0.6rem; align-items: center">
+                <img src="https://i.imgur.com/ek6lNhG.png" alt="Ícone" class="icon" style="width: 35px; height: auto" />
+                <a href="#">GRADUAÇÃO</a>
               </div>
             </li>
             <li onclick="toggleForm('form2')" id="item2">
               <div style="display: flex; gap: 1rem; align-items: center">
-                <img src="https://i.imgur.com/wUuGzSd.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <img src="https://i.imgur.com/EnWTW31.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
                 <a href="#">EXPULSÃO</a>
               </div>
             </li>
+            <li onclick="toggleForm('form14')" id="item14">
+              <div style="display: flex; gap: 0.8rem; align-items: center">
+                <img src="https://i.imgur.com/DDp7abH.png" alt="Ícone" class="icon" style="width: 20px; height: auto" />
+                <a href="#">ADVERTÊNCIA</a>
+              </div>
             <li onclick="toggleForm('form3')" id="item3">
               <div style="display: flex; gap: 1rem; align-items: center">
-                <img src="https://i.imgur.com/7z0S0AN.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <img src="https://i.imgur.com/vUn4p9M.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
                 <a href="#">LICENÇA</a>
               </div>
             </li>
             <li onclick="toggleForm('form4')" id="item4">
               <div style="display: flex; gap: 1rem; align-items: center">
-                <img src="https://i.imgur.com/yteQ6JX.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <img src="https://i.imgur.com/VBG7iMT.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
                 <a href="#">PROMOÇÃO</a>
               </div>
             </li>
             <li onclick="toggleForm('form5')" id="item5">
               <div style="display: flex; gap: 1rem; align-items: center">
-                <img src="https://i.imgur.com/TJDDMm3.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <img src="https://i.imgur.com/IAG6cru.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
                 <a href="#">REBAIXAMENTO</a>
               </div>
             </li>
             <li onclick="toggleForm('form6')" id="item6">
               <div style="display: flex; gap: 1rem; align-items: center">
-                <img src="https://i.imgur.com/rTP6CQK.png" alt="Ícone" class="icon" style="width: 20px; height: auto" />
+                <img src="https://i.imgur.com/zKbZh1m.png" alt="Ícone" class="icon" style="width: 20px; height: auto" />
+                <a href="#">SAÍDA</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form7')" id="item7">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/HiCxY5P.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">PROLONGAMENTO DE LICENÇA</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form8')" id="item8">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/0ncjPPy.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">RETORNO DE LICENÇA</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form9')" id="item9">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/md7A8oZ.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">MIGRAÇÃO DE CORPO</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form10')" id="item10">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/xi0zMhG.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">TRANSFERÊNCIA DE CONTA</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form11')" id="item11">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/ueZCCxA.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">REINTEGRAÇÃO</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form12')" id="item12">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/428Hx6V.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">ATUALIZAÇÃO DA LISTAGEM</a>
+              </div>
+            </li>
+        </ul>
+      </button>
+
+      <!-- <div class="buttons">
+     <i class="fa fa-chevron-down"></i>
+        <ul class="dropdown">
+            <li onclick="toggleForm('form1')" id="item1">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/ZKap2R6.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">ENTRADA DE MEMBROS</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form13')" id="item13">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/ek6lNhG.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">GRADUAÇÃO</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form2')" id="item2">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/EnWTW31.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">EXPULSÃO</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form14')" id="item14">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/DDp7abH.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">ADVERTÊNCIA</a>
+              </div>
+            <li onclick="toggleForm('form3')" id="item3">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/vUn4p9M.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">LICENÇA</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form4')" id="item4">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/VBG7iMT.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">PROMOÇÃO</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form5')" id="item5">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/IAG6cru.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <a href="#">REBAIXAMENTO</a>
+              </div>
+            </li>
+            <li onclick="toggleForm('form6')" id="item6">
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <img src="https://i.imgur.com/rTP6CQK.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
                 <a href="#">SAÍDA</a>
               </div>
             </li>
@@ -719,13 +820,13 @@
             </li>
             <li onclick="toggleForm('form10')" id="item10">
               <div style="display: flex; gap: 1rem; align-items: center">
-                <img src="https://i.imgur.com/tUhaMkI.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <img src="https://i.imgur.com/xi0zMhG.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
                 <a href="#">TRANSFERÊNCIA DE CONTA</a>
               </div>
             </li>
             <li onclick="toggleForm('form11')" id="item11">
               <div style="display: flex; gap: 1rem; align-items: center">
-                <img src="https://i.imgur.com/ENa2MsJ.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
+                <img src="https://i.imgur.com/ueZCCxA.png" alt="Ícone" class="icon" style="width: 25px; height: auto" />
                 <a href="#">REINTEGRAÇÃO</a>
               </div>
             </li>
@@ -737,106 +838,40 @@
             </li>
         </ul>
       </button>
-
-      <!-- <div class="buttons">
-        <i class="fa fa-chevron-left nav-arrow left" onclick="prevButton()"></i>
-        <button class="button" onclick="toggleForm('form1')">
-          <img src="https://i.imgur.com/lDszu4v.png" alt="Ícone" class="icon" />
-          ENTRADA DE MEMBROS
-        </button>
-        <button class="button" onclick="toggleForm('form2')">
-          <img src="https://i.imgur.com/wUuGzSd.png" alt="Ícone" class="icon" />
-          EXPULSÃO
-        </button>
-        <button class="button" onclick="toggleForm('form3')">
-          <img src="https://i.imgur.com/7z0S0AN.png" alt="Ícone" class="icon" />
-          LICENÇA
-        </button>
-        <button class="button" onclick="toggleForm('form4')">
-          <img src="https://i.imgur.com/yteQ6JX.png" alt="Ícone" class="icon" />
-          PROMOÇÃO
-        </button>
-        <button class="button" onclick="toggleForm('form5')">
-          <img src="https://i.imgur.com/TJDDMm3.png" alt="Ícone" class="icon" />
-          REBAIXAMENTO
-        </button>
-        <button class="button" onclick="toggleForm('form6')">
-          <img src="https://i.imgur.com/rTP6CQK.png" alt="Ícone" class="icon" />
-          SAÍDA
-        </button>
-        <button class="button" onclick="toggleForm('form7')">
-          <img src="https://i.imgur.com/ffZO6s0.png" alt="Ícone" class="icon" />
-          PROLONGAMENTO DE LICENÇA
-        </button>
-        <button class="button" onclick="toggleForm('form8')">
-          <img src="https://i.imgur.com/sr9btur.png" alt="Ícone" class="icon" />
-          RETORNO DE LICENÇA
-        </button>
-        <button class="button" onclick="toggleForm('form9')">
-          <img src="https://i.imgur.com/Z5fxRu2.png" alt="Ícone" class="icon" />
-          MIGRAÇÃO DE CORPO
-        </button>
-        <button class="button" onclick="toggleForm('form10')">
-          <img src="https://i.imgur.com/tUhaMkI.png" alt="Ícone" class="icon" />
-          TRANSFERÊNCIA DE CONTA
-        </button>
-        <button class="button" onclick="toggleForm('form11')">
-          <img src="https://i.imgur.com/ENa2MsJ.png" alt="Ícone" class="icon" />
-          REINTEGRAÇÃO
-        </button>
-        <button class="button" onclick="toggleForm('form12')">
-          <img src="https://i.imgur.com/428Hx6V.png" alt="Ícone" class="icon" />
-          ATUALIZAÇÃO DA LISTAGEM
-        </button>
-        <i
-          class="fa fa-chevron-right nav-arrow right"
-          onclick="nextButton()"
-        ></i>
       </div> -->
 
       <div id="form1" class="form-container">
         <form onsubmit="event.preventDefault(); submitForm1();">
-          <input type="text" name="nick_ent" placeholder="Nickname(s)" required />
+          <input type="text" name="Nick_ent" placeholder="Nickname(s)" required />
           <button type="submit">Enviar</button>
         </form>
       </div> 
       <div id="form2" class="form-container">
-        <form onsubmit="event.preventDefault(); submitForm2();"">
+        <form onsubmit="event.preventDefault(); submitForm2();">
             <input type="text" name="TAG_ex" placeholder="TAG" required />
                 <select name="cargo_ex" required>
                     <option value="" disabled selected>Cargo</option>
-                    <option value="Professor">Professor</option>
-                    <option value="Coordenador">Coordenador</option>
+                    <option value="Supervisor">Supervisor</option>
+                    <option value="Tutor">Tutor</option>
+                    <option value="Fiscalizador">Fiscalizador</option>
                     <option value="Graduador">Graduador</option>
                     <option value="Estagiário">Estagiário</option>
-                    <option value="Conselheiro">Conselheiro</option>
+                    <option value="Ministro">Ministro</option>
                     <option value="Vice-Líder">Vice-Líder</option>
                     <option value="Líder">Líder</option>
                 </select>
-                <select name="motivo_ex" required>
-                  <option value="" disabled selected>Motivo</option>
-                  <option value="Acúmulo de advertência">Acúmulo de advertência</option>
-                  <option value="Não postagem de retorno de licença">Não postagem de retorno de licença</option>
-                  <option value="Limite de dias offline">Limite de dias offline</option>
-                  <option value="Não cumprimento de duas metas consecutivas">Não cumprimento de duas metas consecutivas</option>
-                  <option value="Pulo de script">Pulo de script</option>
-                  <option value="Não realização da graduação no prazo">Não realização da graduação no prazo</option>
-                  <option value="Falsificação de informações">Falsificação de informações</option>
-                  <option value="Abuso de poder">Abuso de poder</option>
-                  <option value="Nepotismo">Nepotismo</option>
-              </select>
-                <select name="perm_ex" required>
+                <input type="text" name="motivo_ex" placeholder="Motivo" required />
+                <select name="permissao_ex" required>
                     <option value="" disabled selected>Permissão</option>
                     <option value="Liderança">Liderança</option>
-                    <option value="Conselho da Segurança">Conselho da Segurança</option>
-                    <option value="Conselho de Contabilidade">Conselho da Contabilidade</option>
-                    <option value="Conselho">Conselho</option>
-                    <option value="SPP">Serviço de Proteção dos Professores</option>
+                    <option value="Ministério da Segurança">Ministério da Segurança</option>
+                    <option value="Ministério da Finanças">Ministério das Finanças</option>
+                    <option value="Ministério">Ministério</option>
+                    <option value="Divisão de Investigação e Segurança">Divisão de Investigação e Segurança</option>
                 </select>
             <button type="submit">Enviar</button>
         </form>
     </div>
-    
       <div id="form3" class="form-container">
         <form novalidate>
           <input type="text" placeholder="Nickname" required />
@@ -844,7 +879,7 @@
             type="number"
             min="7"
             max="90"
-            placeholder="Quantidade de dias"
+            placeholder="Quantidade de dias:"
             required
           />
           <input type="text" placeholder="Permissão" required />
@@ -853,7 +888,7 @@
             <label for="lic_terms"
               >Estou ciente que tenho até 24 horas do término de minha licença
               para postar o meu retorno, caso contrário, serei expulso da
-              companhia dos Professores e receberei 100 medalhas efetivas
+              companhia dos Supervisores e receberei 100 medalhas efetivas
               negativas.</label
             >
           </div>
@@ -866,21 +901,23 @@
           <div class="row">
             <select name="cargo_pro" required>
               <option value="" disabled selected>Cargo atual</option>
-              <option value="Professor">Professor</option>
-              <option value="Coordenador">Coordenador</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
               <option value="Graduador">Graduador</option>
               <option value="Estagiário">Estagiário</option>
-              <option value="Conselheiro">Conselheiro</option>
+              <option value="Ministro">Ministro</option>
               <option value="Vice-Líder">Vice-Líder</option>
               <option value="Líder">Líder</option>
             </select>
             <select name="cargo_pro2" required>
               <option value="" disabled selected>Novo cargo</option>
-              <option value="Professor">Professor</option>
-              <option value="Coordenador">Coordenador</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
               <option value="Graduador">Graduador</option>
               <option value="Estagiário">Estagiário</option>
-              <option value="Conselheiro">Conselheiro</option>
+              <option value="Ministro">Ministro</option>
               <option value="Vice-Líder">Vice-Líder</option>
               <option value="Líder">Líder</option>
             </select>
@@ -896,22 +933,25 @@
           <div class="row">
             <select name="cargo_reb" required>
               <option value="" disabled selected>Cargo atual</option>
-              <option value="Professor">Professor</option>
-              <option value="Coordenador">Coordenador</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
               <option value="Graduador">Graduador</option>
               <option value="Estagiário">Estagiário</option>
-              <option value="Conselheiro">Conselheiro</option>
+              <option value="Ministro">Ministro</option>
               <option value="Vice-Líder">Vice-Líder</option>
               <option value="Líder">Líder</option>
             </select>
             <select name="cargo_reb2" required>
               <option value="" disabled selected>Novo cargo</option>
-              <option value="Professor">Professor</option>
-              <option value="Coordenador">Coordenador</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Tutor">Tutor</option>
+              <option value="Fiscalizador">Fiscalizador</option>
               <option value="Graduador">Graduador</option>
               <option value="Estagiário">Estagiário</option>
-              <option value="Conselheiro">Conselheiro</option>
+              <option value="Ministro">Ministro</option>
               <option value="Vice-Líder">Vice-Líder</option>
+              <option value="Líder">Líder</option>
             </select>
           </div>
           <input type="text" name="motivo_reb" placeholder="Motivo" required />
@@ -924,11 +964,12 @@
           <input type="text" name="nick_sai" placeholder="Nickname" required />
           <select name="cargo_sai" required>
             <option value="" disabled selected>Cargo</option>
-            <option value="Professor">Professor</option>
-            <option value="Coordenador">Coordenador</option>
+            <option value="Supervisor">Supervisor</option>
+            <option value="Tutor">Tutor</option>
+            <option value="Fiscalizador">Fiscalizador</option>
             <option value="Graduador">Graduador</option>
             <option value="Estagiário">Estagiário</option>
-            <option value="Conselheiro">Conselheiro</option>
+            <option value="Ministro">Ministro</option>
             <option value="Vice-Líder">Vice-Líder</option>
             <option value="Líder">Líder</option>
           </select>
@@ -961,7 +1002,7 @@
             <label for="licpro_terms"
               >Estou ciente que tenho até 24 horas do término de minha licença
               para postar o meu retorno, caso contrário, serei expulso da
-              companhia dos Professores e receberei 100 medalhas efetivas
+              companhia dos Supervisores e receberei 100 medalhas efetivas
               negativas.</label
             >
           </div>
@@ -977,11 +1018,11 @@
       <div id="form9" class="form-container">
         <form novalidate>
           <input type="text" placeholder="Nickname" required />
-          <select required><option value="" disabled selected>Migrando para o</option>
+          <select required>
+            <option value="" disabled selected>Migrando para o</option>
             <option value="Corpo Militar">Corpo Militar</option>
             <option value="Corpo Executivo">Corpo Executivo</option>
           </select>
-          <input type="text" placeholder="Permissão" required />
           <button type="submit">Enviar</button>
         </form>
       </div>
@@ -989,11 +1030,12 @@
         <form novalidate>
           <select required>
             <option value="" disabled selected>Cargo</option>
-            <option value="Professor">Professor</option>
-            <option value="Coordenador">Coordenador</option>
+            <option value="Supervisor">Supervisor</option>
+            <option value="Tutor">Tutor</option>
+            <option value="Fiscalizador">Fiscalizador</option>
             <option value="Graduador">Graduador</option>
             <option value="Estagiário">Estagiário</option>
-            <option value="Conselheiro">Conselheiro</option>
+            <option value="Ministro">Ministro</option>
             <option value="Vice-Líder">Vice-Líder</option>
             <option value="Líder">Líder</option>
           </select>
@@ -1027,7 +1069,26 @@
           <button id="enviar_attlist" type="submit">Enviar</button>
         </form>
       </div>
-
+      <div id="form13" class="form-container">
+        <form novalidate>
+          <input type="text" placeholder="Nickname" required />
+          <select required>
+            <option value="" disabled selected>Curso</option>
+            <option value="Graduação Básica">Graduação Básica</option>
+            <option value="Graduação Intermediária">Graduação Intermediária</option>
+            <option value="Graduação Avançada">Graduação Avançada</option>
+          </select>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div id="form14" class="form-container">
+        <form novalidate>
+          <input type="text" placeholder="Nick do(a) responsável" required />
+          <input type="text" placeholder="Nick do(a) advertido(a)" required />
+          <input type="text" placeholder="Motivo" required />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
       <div class="credits">
         <p>
           <i class="fas fa-code"></i> Desenvolvimento:
@@ -1036,15 +1097,14 @@
         </p>
         <p class="line-break">
           <i class="far fa-registered"></i> Todos os direitos reservados à
-          <strong>Companhia dos Professores</strong>
+          <strong>Companhia dos Supervisores</strong>
         </p>
       </div>
     </div>
-
-    <script src="https://forumeiros.github.io/assets/src/form-generator/form-replace.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
 <script>
 // Função para processar os campos do formulário
 function processFields(data) {
@@ -1082,6 +1142,13 @@ function processFields(data) {
   return processedData;
 }
 
+// Função para determinar a categoria da TAG
+function getCategory(tagValue) {
+  // Aqui você pode implementar lógica para determinar a categoria da TAG
+  // Exemplo simples: categoriza com base no primeiro caractere da TAG
+  let firstChar = tagValue.charAt(0).toUpperCase();
+  return firstChar;
+}
 // Função para determinar a categoria da TAG
 function getCategory(tagValue) {
   // Aqui você pode implementar lógica para determinar a categoria da TAG
@@ -1147,6 +1214,8 @@ function submitForm6() {
     form10: "TRANSFERÊNCIA DE CONTA",
     form11: "REINTEGRAÇÃO",
     form12: "ATUALIZAÇÃO DA LISTAGEM",
+    form13: "GRADUAÇÃO",
+    form14: "ADVERTÊNCIA",
   };
 
   function toggleForm(formId) {
@@ -1215,7 +1284,7 @@ function gatherFormData() {
     // Incluir título apenas se não for form12
     if (formId !== "form12") {
         const title = formTitles[formId];
-        formData += `[font=Poppins][center][table style="border-color: black; border-radius: 10px; overflow: hidden; width: auto;" bgcolor="#560c7e"][tr][td][size=16][center][color=#ffffff][b]${title}[/b][/color][/center][/size][/td][/tr][/table][/center]\n[size=13][left]`;
+        formData += `[font=Poppins][center][table style="border-color: black; border-radius: 10px; overflow: hidden; width: auto;" bgcolor="#30a737"][tr][td][size=16][center][color=#ffffff][b]${title}[/b][/color][/center][/size][/td][/tr][/table][/center]\n[size=13][left]`;
     }
 
     const inputs = activeForm.querySelectorAll("input, select, textarea");
@@ -1231,7 +1300,7 @@ function gatherFormData() {
             const value = input.value.trim();
             if (value) {
                 let formattedValue = value;
-                if (input.type === "date" && (formId === "form1" || formId === "form2" || formId === "form6" || formId === "form11")) {
+                if (input.type === "date" && (formId === "form1" || formId === "form2" || formId === "form6" || formId === "form11" || formId === "form13" || formId === "form14")) {
                     const dateParts = value.split("-");
                     formattedValue = `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`;
                 }
@@ -1249,12 +1318,12 @@ function gatherFormData() {
                 } else {
                     if (placeholder === "Cargo" && (formId === "form2" || formId === "form6")) {
                         // Adicionar espaçamento abaixo do placeholder "Cargo"
-                        placeholdersData += `[color=#560c7e][b]${placeholder}[/b][/color]: ${formattedValue}\n`;
+                        placeholdersData += `[color=#30a737][b]${placeholder}[/b][/color]: ${formattedValue}\n`;
                     } else {
                         if (formId !== "form12") {
-                            placeholdersData += `[color=#560c7e][b]${placeholder}[/b][/color]: ${formattedValue}\n`;
+                            placeholdersData += `[color=#30a737][b]${placeholder}[/b][/color]: ${formattedValue}\n`;
                         } else {
-                            placeholdersData += `[color=#560c7e][b]${placeholder}[/b][/color] ${formattedValue}\n`;
+                            placeholdersData += `[color=#30a737][b]${placeholder}[/b][/color] ${formattedValue}\n`;
                         }
                     }
                 }
@@ -1266,17 +1335,17 @@ function gatherFormData() {
     formData += placeholdersData;
 
     // Incluir data apenas se for form1, form2, form4, form5, form6, form11
-    if (formId === "form1" || formId === "form2" || formId === "form6" || formId === "form11") {
+    if (formId === "form1" || formId === "form2" || formId === "form6" || formId === "form11" || formId === "form13" || formId === "form14") {
         const today = new Date();
         const formattedDate = `${today.getDate().toString().padStart(2, '0')}/${(today.getMonth() + 1).toString().padStart(2, '0')}/${today.getFullYear()}`;
-        formData += `[color=#560c7e][b]Data:[/b][/color] ${formattedDate}\n`;
+        formData += `[color=#30a737][b]Data:[/b][/color] ${formattedDate}\n`;
     }
 
     const checkboxes = activeForm.querySelectorAll('input[type="checkbox"]');
     checkboxes.forEach((checkbox) => {
         if (checkbox.checked) {
             const label = checkbox.nextElementSibling.innerText.trim();
-            formData += `[color=#560c7e][b]☒[/b][/color] ${label}\n`;
+            formData += `[color=#30a737][b]☒[/b][/color] ${label}\n`;
         }
     });
 
@@ -1372,15 +1441,13 @@ function gatherFormData() {
           }
 
           // Gerar o texto da atualização
-          var texto =
-            '[table class="rank attprof" style="border: none!important; margin: 1em; line-height: 1.4em;"]' +
+         // Gerar o texto da atualização
+         var texto = '[table class="rank suptable" style="border: none!important; margin: 1em; padding: 1.4em; line-height: 1.4em;"]' +
             '[tr style="border: none;"]' +
             '[td style="border: none!important;"]' +
-            "[img]https://i.imgur.com/1nRwKhI.gif[/img]\n" +
-            "[font=Poppins][size=15][color=white][b][PROF] ATUALIZADO [" + attlist_tag_value +"][/b][/color][/size][color=white]\n" +
-            "Em virtude do Conselho da Documentação, foi realizada uma atualização neste horário. \n" +
-            "Em caso de erros consulte um conselheiro+ da companhia dos Professores.\n\n" +
-            "[b]#SoberaniaROXA[/b][/color][/font][/td][/tr][/table]";
+            '[img]https://i.imgur.com/pOCVdub.png[/img]\n' +
+            '[font=Poppins][color=white][size=15][b][SUP] Atualização realizada! [' + attlist_tag_value + '][/b][/size]\n' +
+            '[b]Foi realizada uma atualização neste horário, em caso de erros, consulte um membro do Ministério/Liderança.[/b][/color][/font][/td][/tr][/table]';
 
           // Exibir o texto gerado (opcional)
           console.log("Texto gerado:", texto);
